@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan&display=swap");
+
+$main-font: "Kodchasan", sans-serif;
+$main-color: #101010;
+$second-color: #00c6cf;
+$third-color: #d3fbd8;
+
+div.card {
+
+    display: grid;
+    position: absolute;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 1em;
+    padding-right: 1em;
+    height: 50vh;
+    width: 65vw;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+    div.card-img {
+        background-image: url("./img/bg.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    div.props {
+        h1, h3 {
+            font-family: $main-font;
+            color: $main-color;
+        }
+        h1 {
+            span {
+                color: $second-color;
+            }
+        }
+        div.choice {
+            div {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1em;
+                div.container{
+                    button {
+                        font-family: $main-font;
+                        border: solid 1px $main-color;
+                        border-radius: 0.7em;
+                        padding: 0.7em 1.7em;
+                        margin-right: 1em;
+                        cursor: pointer;
+                        transition: border-radius 0.2s cubic-bezier(.19,1,.22,1),
+                                    transform 100ms ease;
+                        outline: none;
+                        
+                    }
+                    button:hover {
+                        border-radius: 1em;
+                    }
+                    button:active {
+                        transform: scale(0.8);
+                    }
+                    button.active {
+                        border-color: $second-color;
+                        border-radius: 1em;
+                    }
+                }
+                label {
+                    font-family: $main-font;
+                    color: $main-color;
+                }
+            }
+        }
+        div.order {
+            display: flex;
+            justify-content: space-between;
+            button {
+                padding: 1em 3em;
+                align-self: flex-start;
+                border-radius: 0.5em;
+                border: solid 1px $main-color;
+                background-color: $second-color;
+                font-family: $main-font;
+                color: $main-color;
+            }
+        }
+    }
+}
