@@ -1,0 +1,15 @@
+{
+  "name": "productpage",
+  "version": "1.0.0",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": "https://github.com/Saucedechoux/ProductPage.git",
+  "author": "Saucedechoux",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
+  }
+}
