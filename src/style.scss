@@ -5,6 +5,10 @@ $main-color: #101010;
 $second-color: #00c6cf;
 $third-color: #d3fbd8;
 
+body {
+    background-color: #f1f1f1;
+}
+
 div.card {
 
     display: grid;
@@ -18,7 +22,9 @@ div.card {
     padding-right: 1em;
     height: 50vh;
     width: 65vw;
+    min-height: 425px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    background-color: white;
 
     div.card-img {
         background-image: url("./img/bg.jpg");
@@ -52,6 +58,7 @@ div.card {
                         transition: border-radius 0.2s cubic-bezier(.19,1,.22,1),
                                     transform 100ms ease;
                         outline: none;
+                        background-color: white;
                         
                     }
                     button:hover {
@@ -74,14 +81,31 @@ div.card {
         div.order {
             display: flex;
             justify-content: space-between;
-            button {
-                padding: 1em 3em;
-                align-self: flex-start;
-                border-radius: 0.5em;
-                border: solid 1px $main-color;
-                background-color: $second-color;
-                font-family: $main-font;
-                color: $main-color;
+            align-items: center;
+            div.container {
+                button {
+                    font-family: $main-font;
+                    border: solid 1px $main-color;
+                    border-radius: 0.7em;
+                    padding: 1em 3em;
+                    margin-right: 1em;
+                    cursor: pointer;
+                    transition: border-radius 0.2s cubic-bezier(.19,1,.22,1),
+                                transform 100ms ease;
+                    outline: none;
+                    background-color: white;
+                    
+                }
+                button:hover {
+                    border-radius: 1em;
+                }
+                button:active {
+                    transform: scale(0.8);
+                }
+                button.active {
+                    border-color: $second-color;
+                    border-radius: 1em;
+                }
             }
         }
     }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.scss">
 </head>
 <body>
+    <div class="load"></div>
     <div class="card">
         <div class="card-img"></div>
         <div class="props">
@@ -38,11 +39,15 @@
                 </div>
             </div>
             <div class="order">
-                <button>Acheter</button>
+                <div class="container">
+                    <button onclick="document.querySelector('.load').classList.toggle('active')">Acheter</button>
+                </div>
                 <h1>249€</h1>
             </div>
         </div>
     </div>
+
+    <script src="./app.ts"></script>
 </body>
 </html>
 
