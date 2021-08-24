@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "main": "src/app.js",
   "scripts": {
-    "start": "parcel -p 5500 src/index.html",
-    "build": "parcel build"
+    "dev": "parcel -p 5500 src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": "https://github.com/Saucedechoux/ProductPage.git",
   "author": "Saucedechoux",
   "license": "MIT",
-  "devDependencies": {
-    "@parcel/transformer-image": "2.0.0-rc.0",
-    "parcel": "^2.0.0-rc.0"
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
   }
 }
