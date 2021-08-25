@@ -18,11 +18,9 @@ div.card {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    gap: 1em;
-    padding-right: 1em;
     height: 50vh;
     width: 65vw;
-    min-height: 425px;
+    min-height: 450px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     background-color: white;
 
@@ -30,9 +28,14 @@ div.card {
         background-image: url("./img/bg.jpg");
         background-size: cover;
         background-position: center;
+        height: 50vh;
+        min-height: 450px;
     }
 
     div.props {
+        padding: 0 1em;
+        height: 50vh;
+        min-height: 450px;
         h1, h3 {
             font-family: $main-font;
             color: $main-color;
@@ -66,6 +69,12 @@ div.card {
                                         transform 100ms ease;
                             outline: none;
                             background-color: white;
+                            -webkit-touch-callout: none;
+                            -webkit-user-select: none;
+                            -khtml-user-select: none;
+                            -moz-user-select: none;
+                                -ms-user-select: none;
+                                    user-select: none;
                         }
                         label:hover {
                             border-radius: 1em;
@@ -112,6 +121,26 @@ div.card {
                 button.active {
                     border-color: $second-color;
                     border-radius: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    div.card {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    div.props {
+        div.choice {
+            div {
+                flex-direction: column;
+                label {
+                    margin-bottom: 1em;
                 }
             }
         }
