@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan&display=swap");
+body {
+  background-color: #f1f1f1;
+}
+div.card {
+  display: grid;
+  position: absolute;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 1em;
+  padding-right: 1em;
+  height: 50vh;
+  width: 65vw;
+  min-height: 425px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background-color: white;
+  border-radius: 0.6em;
+}
+div.card div.card-img {
+  background-image: url("bg.07f9c17b.jpg");
+  background-size: cover;
+  background-position: center;
+}
+div.card div.props h1, div.card div.props h3 {
+  font-family: "Kodchasan", sans-serif;
+  color: #101010;
+}
+div.card div.props h1 span {
+  color: #00c6cf;
+}
+div.card div.props div.choice div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+div.card div.props div.choice div div.button-group div.button input[type=radio] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+div.card div.props div.choice div div.button-group div.button label {
+  font-family: "Kodchasan", sans-serif;
+  border: solid 1px #101010;
+  border-radius: 0.7em;
+  padding: 0.7em 1.7em;
+  margin-right: 1em;
+  cursor: pointer;
+  transition: border-radius 0.2s cubic-bezier(0.19, 1, 0.22, 1), transform 100ms ease;
+  outline: none;
+  background-color: white;
+}
+div.card div.props div.choice div div.button-group div.button label:hover {
+  border-radius: 1em;
+}
+div.card div.props div.choice div div.button-group div.button label:active {
+  transform: scale(0.8);
+}
+div.card div.props div.choice div div.button-group div.button input[type=radio]:checked label {
+  border-color: #00c6cf;
+  border-radius: 1em;
+}
+div.card div.props div.choice div label {
+  font-family: "Kodchasan", sans-serif;
+  color: #101010;
+}
+div.card div.props div.order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.card div.props div.order div.container button {
+  font-family: "Kodchasan", sans-serif;
+  border: solid 1px #101010;
+  border-radius: 0.7em;
+  padding: 1em 3em;
+  margin-right: 1em;
+  cursor: pointer;
+  transition: border-radius 0.2s cubic-bezier(0.19, 1, 0.22, 1), transform 100ms ease;
+  outline: none;
+  background-color: white;
+}
+div.card div.props div.order div.container button:hover {
+  border-radius: 1em;
+}
+div.card div.props div.order div.container button:active {
+  transform: scale(0.8);
+}
+div.card div.props div.order div.container button.active {
+  border-color: #00c6cf;
+  border-radius: 1em;
+}
+/*# sourceMappingURL=index.c039f583.css.map */
